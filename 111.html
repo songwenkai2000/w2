@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Sentinel-2 Remote Sensing Study</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wenkai Song" />
+    <script src="https://songwenkai2000.github.io/w2/header-attrs.js"></script>
+    <link rel="stylesheet" href="https://songwenkai2000.github.io/w2/default.css">
+    <link rel="stylesheet" href="https://songwenkai2000.github.io/w2/default-fonts.css">
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Sentinel-2 Remote Sensing Study
+]
+.author[
+### Wenkai Song
+]
+.date[
+### February 2025
+]
+
+---
+
+
+#  Abstract: What is Sentinel-2?
+
+Sentinel-2 is a twin-satellite mission under the **Copernicus Programme**, launched by the **European Space Agency (ESA)**.
+
+- Provides **optical, multispectral data** in 13 spectral bands
+- Supports land monitoring for **agriculture, forestry, water, urban areas**
+- Revisit time: **5 days**
+- Spatial resolution: **10m, 20m, 60m**
+
+**[Watch: Sentinel-2 Overview](https://www.youtube.com/watch?v=pl7WkG_T3M4)**  
+[![Sentinel-2 Video](https://img.youtube.com/vi/pl7WkG_T3M4/0.jpg)](https://www.youtube.com/watch?v=pl7WkG_T3M4)
+
+---
+
+# 🛰 Technical Overview
+###  Key Features:
+- **Multispectral Instrument (MSI)** with 13 bands
+- **Spatial resolutions**:
+  - 10m: B2 (Blue), B3 (Green), B4 (Red), B8 (NIR)
+  - 20m: Red-edge &amp; SWIR bands
+  - 60m: Atmospheric bands
+- **Swath width**: 290 km
+- **Orbit repeat cycle**: 5 days at the equator
+
+![Band Specs](https://tse1.mm.bing.net/th?id=OIP.jAH0JF2nZ4IAoA85aJgWUQHaIA&amp;pid=Api)
+
+
+---
+
+#  Application 1: Agriculture
+
+- NDVI, SAVI, EVI from Sentinel-2 are used to monitor:
+  - **Vegetation growth**
+  - **Nutrient stress**
+  - **Water availability**
+
+📄 *Example*:  
+Smith et al. (2022) used Sentinel-2 to analyze rice paddies in Vietnam over three seasons for **yield estimation**.
+
+**[NDVI &amp; Agriculture](https://www.youtube.com/watch?v=pBsSjtXAKnU)**  
+[![NDVI Video](https://img.youtube.com/vi/pBsSjtXAKnU/0.jpg)](https://www.youtube.com/watch?v=pBsSjtXAKnU)
+
+---
+
+# Application 2: Water Quality Monitoring
+
+- SWIR bands detect **turbidity**, **algae**, and **sediment**
+- Used for mapping **coastal eutrophication**
+- MNDWI (Modified Normalized Difference Water Index) often applied
+
+📄 *Example*:  
+Johnson et al. (2021) mapped seasonal algae bloom dynamics in Lake Erie using Sentinel-2 data.
+
+**[Water Quality Monitoring](https://www.youtube.com/watch?v=Fx01Jtif884)**  
+[![Water Quality Video](https://img.youtube.com/vi/Fx01Jtif884/0.jpg)](https://www.youtube.com/watch?v=Fx01Jtif884)
+
+---
+
+# Application 3: Urban Change Detection
+
+- Urban expansion detected using band combinations + indices (NDBI, NDVI)
+- Supports disaster response: floods, fires, landslides
+- Temporal analysis for **infrastructure &amp; sprawl**
+
+📄 *Example*:  
+Wang et al. (2023) used Sentinel-2 and Random Forest for mapping Dhaka’s urban expansion.
+
+**[Urban Sensing](https://www.youtube.com/watch?v=L90VZ4cNCTM)**  
+[![Urban Growth Video](https://img.youtube.com/vi/L90VZ4cNCTM/0.jpg)](https://www.youtube.com/watch?v=L90VZ4cNCTM)
+
+---
+
+# Reflection: What We Learned
+
+## Sentinel-2 Provides:
+- **Regular high-res data** for change detection
+- Easy access via **Copernicus Hub** and **Google Earth Engine**
+- Flexible use in **R, Python, GEE, SNAP, QGIS**
+
+**[AI &amp; Remote Sensing](https://www.youtube.com/watch?v=l4yE6d13c8A)**  
+[![AI in Remote Sensing](https://img.youtube.com/vi/l4yE6d13c8A/0.jpg)](https://www.youtube.com/watch?v=l4yE6d13c8A)
+
+---
+
+# AI + Sentinel-2 Integration
+
+- Used in **supervised classification**: Random Forest, SVM, CNN
+- **Time series models** detect seasonal vegetation patterns
+- **Deep learning** now used for:
+  - Land use classification
+  - Fire detection
+  - Crop yield prediction
+
+.center[
+![ESA Platform](https://tse1.mm.bing.net/th?id=OIP.47i_aRmRS96AJG2CFEvqJgHaDh&amp;pid=Api)
+]
+
+---
+
+# Future Use &amp; Research Directions
+
+- Sentinel-2C &amp; 2D scheduled to **extend mission** to 2035
+- Higher temporal frequency + machine learning
+- Combined use with:
+  - **SAR (Sentinel-1)**
+  - **LiDAR**
+  - **Drone imagery**
+
+.center[
+![Future Sentinel](https://tse2.mm.bing.net/th?id=OIP.Oqt8yjNQG3hmjlchUjR9cQHaEK&amp;pid=Api)
+]
+
+---
+
+# References
+
+1. ESA. Sentinel-2 Mission. [sentinels.copernicus.eu](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2)  
+2. Smith et al. (2022). *Crop Monitoring Using Sentinel-2*. Remote Sensing.  
+3. Johnson et al. (2021). *Water Quality via Satellite*. Earth Science Reviews.  
+4. Wang et al. (2023). *Urban Mapping with Sentinel-2*. IEEE Geoscience.  
+5. SNAP Toolbox. [step.esa.int](http://step.esa.int/main/toolboxes/snap/)  
+6. Google Earth Engine. [earthengine.google.com](https://earthengine.google.com/)  
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
